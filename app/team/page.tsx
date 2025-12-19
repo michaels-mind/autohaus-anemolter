@@ -44,11 +44,23 @@ export default function TeamPage() {
               </div>
             </div>
           </div>
-          <div className="aspect-square bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 relative">
-             {/* Platzhalter für ein Team- oder Firmenfoto */}
-             <div className="absolute inset-0 flex items-center justify-center text-gray-600">
-               [Bild: Firmengebäude oder Team]
-             </div>
+          
+          {/* Bild von Witali */}
+          <div className="aspect-square bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 relative group">
+              <Image 
+                src="/images/witali.webp"
+                alt="Witali Böhm - Inhaber Autohaus Anemolter"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                priority
+              />
+              {/* Overlay für bessere Lesbarkeit des Textes unten, falls nötig */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+              
+              <div className="absolute bottom-0 left-0 p-6">
+                <p className="text-white font-bold text-lg">Vitalij Böhm</p>
+                <p className="text-[var(--color-primary)] text-sm">Inhaber & Gründer</p>
+              </div>
           </div>
         </div>
 
