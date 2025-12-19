@@ -32,7 +32,7 @@ export const DUMMY_VEHICLES: Vehicle[] = [
     fuel: 'Benzin',
     transmission: 'Automatik',
     power: 184,
-    image: 'https://images.unsplash.com/photo-1555215695-3004980adade?auto=format&fit=crop&q=80&w=800'
+    image: '/images/bmw-dummy.webp',
   }, // <--- DIESE ZEILE HATTE GEFEHLT
   {
     id: '4',
