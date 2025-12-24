@@ -1,7 +1,8 @@
 ﻿import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@/components/layout/Header"; // Importiert!
-import { Footer } from "@/components/layout/Footer"; // Importiert!
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import LoginGuard from "@/components/LoginGuard";
 
 export const metadata: Metadata = {
   title: "Autohaus Anemolter",
@@ -16,15 +17,11 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body className="antialiased min-h-screen flex flex-col bg-[var(--color-background)] text-[var(--color-text-primary)]">
-        
-        <Header />
-        
-        <main className="flex-grow">
-          {children}
-        </main>
-        
-        <Footer />
-        
+        <LoginGuard>
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </LoginGuard>
       </body>
     </html>
   );
