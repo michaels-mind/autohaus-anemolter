@@ -4,20 +4,24 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
+        protocol: "https",
+        hostname: "images.unsplash.com",
       },
       {
-        protocol: 'https',
-        hostname: 'plus.unsplash.com',
+        protocol: "https",
+        hostname: "plus.unsplash.com",
       },
       {
-        protocol: 'https',
-        hostname: 'i.ebayimg.com',
+        protocol: "https",
+        hostname: "i.ebayimg.com",
       },
       {
-        protocol: 'https',
-        hostname: 'img.classistatic.de',
+        protocol: "https",
+        hostname: "img.classistatic.de",
+      },
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
       },
     ],
   },
